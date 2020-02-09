@@ -137,25 +137,31 @@
           
         </div>
         
-        <img src="https://kosuke-oshinari.github.io/images/featured-post/post-2.jpg" class="img-fluid w-100 mb-4" alt="AVAYA 発信の仕組み">
-        
         <div class="content mb-5">
           <p>Avayaの発信の仕組みは非常に複雑である。今回は、発信の全体概要を説明し、次回以降で詳細を説明する。</p>
-<h1 id="----">発信の仕組み　- 概要 -</h1>
+<h3 id="----">発信の仕組み　- 概要 -</h3>
+<hr>
 <p>コールセンターから発信する場合、オペレータが電話機又はソフトフォンから架電操作を行うとAvaya Aura Communication Managerにて処理を行い、Media-GatewayからPSTN(公衆交換電話網)を通して、架電先へ着信する。では、この発信操作を行う際に、コールセ
 ンター内のPBXではどのような処理を行っているのだろうか。</p>
 <figure>
     <img src="../../images/post-1/post-1_001.png" width="70%"/> 
 </figure>
 
-<p>発信業務を行う際にオペレータが実際に行う操作は、</p>
+<p>発信業務を行う際にオペレータが実際に行う操作は、
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --></p>
 <ol>
 <li>受話器をあげるまたはソフトフォンの発信ボタンをプッシュする</li>
 <li>電話機またはソフトフォンを操作し、 <strong>0 + 電話番号</strong> をプッシュ</li>
-<li>発信音(プルルルル)が鳴り、相手の番号に着信する</li>
+<li>発信音(プルルルル)が鳴り、相手の番号に着信する
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --></li>
 </ol>
-<p>のたった3つの操作である。</p>
-<p>では、PBXではどのようなどのような処理がなされるのか簡単に説明する。</p>
+<p>のたった3つの操作である。
+<!-- raw HTML omitted --></p>
+<p>では、PBXではどのようなどのような処理がなされるのか簡単に説明する。
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --></p>
 <ol>
 <li>オペレータが受話器が上げるとトーン(プープープー)を返す</li>
 <li><strong>0 + 電話番号</strong>の先頭の「0」を入力することで外線発信の処理開始</li>
@@ -163,10 +169,12 @@
 <li>PBXに収容されている電話回線からPSTNに到達</li>
 <li>PSTNを通って相手の電話機に着信</li>
 </ol>
+<!-- raw HTML omitted -->
 <p>かなり簡単に書いたが、実際にはもっと複雑である。
 特に2～4の処理が非常に複雑なので、より詳細な説明は次回以降で行う。</p>
 <!-- raw HTML omitted -->
-<h1 id="heading">発信に関わるパラメータ</h1>
+<h3 id="heading">発信に関わるパラメータ</h3>
+<hr>
 <p>発信処理に関連するPBX内のパラメータはどのようなものがあるだろうか.<!-- raw HTML omitted -->
 以下に一通り列挙してみる。</p>
 <ul>

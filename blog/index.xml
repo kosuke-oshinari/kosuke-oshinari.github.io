@@ -18,7 +18,7 @@
       
       <guid>https://kosuke-oshinari.github.io/blog/post-1/</guid>
       <description>Avayaの発信の仕組みは非常に複雑である。今回は、発信の全体概要を説明し、次回以降で詳細を説明する。
-発信の仕組み　- 概要 - コールセンターから発信する場合、オペレータが電話機又はソフトフォンから架電操作を行うとAvaya Aura Communication Managerにて処理を行い、Media-GatewayからPSTN(公衆交換電話網)を通して、架電先へ着信する。では、この発信操作を行う際に、コールセ ンター内のPBXではどのような処理を行っているのだろうか。</description>
+発信の仕組み　- 概要 -  コールセンターから発信する場合、オペレータが電話機又はソフトフォンから架電操作を行うとAvaya Aura Communication Managerにて処理を行い、Media-GatewayからPSTN(公衆交換電話網)を通して、架電先へ着信する。では、この発信操作を行う際に、コールセ ンター内のPBXではどのような処理を行っているのだろうか。</description>
     </item>
     
     <item>
