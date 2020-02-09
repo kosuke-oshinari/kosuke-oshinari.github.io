@@ -6,10 +6,19 @@
     <description>Recent content in Categories on らくがき | Personal blog template</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
-    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 09:48:47 +0600</lastBuildDate>
     
 	<atom:link href="https://kosuke-oshinari.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AVAYA</title>
+      <link>https://kosuke-oshinari.github.io/categories/avaya/</link>
+      <pubDate>Sat, 08 Feb 2020 09:48:47 +0600</pubDate>
+      
+      <guid>https://kosuke-oshinari.github.io/categories/avaya/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Go Language</title>

@@ -125,147 +125,66 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         
-        <a href="/categories/html-css"
-          class="text-primary">H t m l &amp; c s s</a>
+        <a href="/categories/avaya"
+          class="text-primary">A v a y a</a>
         
-        <h2>How To Use Checklists To Improve Your UX</h2>
+        <h2>AVAYA 発信の仕組み</h2>
         <div class="mb-3 post-meta">
           <span>By Themefisher</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>29 October 2019</span>
+          <span>08 February 2020</span>
           
         </div>
         
-        <img src="https://kosuke-oshinari.github.io/images/featured-post/post-2.jpg" class="img-fluid w-100 mb-4" alt="How To Use Checklists To Improve Your UX">
+        <img src="https://kosuke-oshinari.github.io/images/featured-post/post-2.jpg" class="img-fluid w-100 mb-4" alt="AVAYA 発信の仕組み">
         
         <div class="content mb-5">
-          <h1 id="heading-1">Heading 1</h1>
-<h2 id="heading-2">Heading 2</h2>
-<h3 id="heading-3">Heading 3</h3>
-<h4 id="heading-4">Heading 4</h4>
-<h5 id="heading-5">Heading 5</h5>
-<h6 id="heading-6">Heading 6</h6>
-<!-- raw HTML omitted -->
-<h5 id="emphasis">Emphasis</h5>
-<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
-<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
-<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
-<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
-<!-- raw HTML omitted -->
-<h5 id="link">Link</h5>
-<p><a href="https://www.google.com">I'm an inline-style link</a></p>
-<p><a href="https://www.google.com" title="Google's Homepage">I'm an inline-style link with title</a></p>
-<p><a href="https://www.mozilla.org">I'm a reference-style link</a></p>
-<p><a href="../blob/master/LICENSE">I'm a relative reference to a repository file</a></p>
-<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
-<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
-<p>URLs and URLs in angle brackets will automatically get turned into links.
-<a href="http://www.example.com">http://www.example.com</a> or <a href="http://www.example.com">http://www.example.com</a> and sometimes
-example.com (but not on Github, for example).</p>
-<p>Some text to show that the reference links can follow later.</p>
-<!-- raw HTML omitted -->
-<h5 id="paragraph">Paragraph</h5>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.</p>
-<!-- raw HTML omitted -->
-<h5 id="list">List</h5>
+          <p>Avayaの発信の仕組みは非常に複雑である。今回は、発信の全体概要を説明し、次回以降で詳細を説明する。</p>
+<h1 id="----">発信の仕組み　- 概要 -</h1>
+<p>コールセンターから発信する場合、オペレータが電話機又はソフトフォンから架電操作を行うとAvaya Aura Communication Managerにて処理を行い、Media-GatewayからPSTN(公衆交換電話網)を通して、架電先へ着信する。では、この発信操作を行う際に、コールセ
+ンター内のPBXではどのような処理を行っているのだろうか。</p>
+<figure>
+    <img src="../../images/post-1/post-1_001.png" width="70%"/> 
+</figure>
+
+<p>発信業務を行う際にオペレータが実際に行う操作は、</p>
 <ol>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
+<li>受話器をあげるまたはソフトフォンの発信ボタンをプッシュする</li>
+<li>電話機またはソフトフォンを操作し、 <strong>0 + 電話番号</strong> をプッシュ</li>
+<li>発信音(プルルルル)が鳴り、相手の番号に着信する</li>
 </ol>
-<h5 id="unordered-list">Unordered List</h5>
+<p>のたった3つの操作である。</p>
+<p>では、PBXではどのようなどのような処理がなされるのか簡単に説明する。</p>
+<ol>
+<li>オペレータが受話器が上げるとトーン(プープープー)を返す</li>
+<li><strong>0 + 電話番号</strong>の先頭の「0」を入力することで外線発信の処理開始</li>
+<li>電話機が所属するPBX内のグループと<strong>0 + 電話番号</strong>の電話番号の数値から発信ルートを確定</li>
+<li>PBXに収容されている電話回線からPSTNに到達</li>
+<li>PSTNを通って相手の電話機に着信</li>
+</ol>
+<p>かなり簡単に書いたが、実際にはもっと複雑である。
+特に2～4の処理が非常に複雑なので、より詳細な説明は次回以降で行う。</p>
+<!-- raw HTML omitted -->
+<h1 id="heading">発信に関わるパラメータ</h1>
+<p>発信処理に関連するPBX内のパラメータはどのようなものがあるだろうか.<!-- raw HTML omitted -->
+以下に一通り列挙してみる。</p>
 <ul>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
+<li>dialplan analysis</li>
+<li>feature-access-code</li>
+<li>ip-network-map</li>
+<li>ip-network-region</li>
+<li>location</li>
+<li>ars analysis</li>
+<li>station</li>
+<li>route-pattern</li>
+<li>partition-route-table</li>
+<li>cor</li>
+<li>public-unknown-numbering</li>
+<li>private-numbering</li>
+<li>trunk-group</li>
+<li>ds1</li>
 </ul>
-<!-- raw HTML omitted -->
-<h5 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h5>
-<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript syntax highlighting&#34;</span>;
-<span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">s</span>);
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Python syntax highlighting</span><span style="color:#e6db74">&#34;</span>
-<span style="color:#66d9ef">print</span> s
-</code></pre></div><pre><code>No language indicated, so no syntax highlighting. 
-But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre><!-- raw HTML omitted -->
-<h5 id="blockquote">Blockquote</h5>
-<blockquote>
-<p>This is a blockquote example.</p>
-</blockquote>
-<!-- raw HTML omitted -->
-<h5 id="inline-html">Inline HTML</h5>
-<p>You can also use raw HTML in your Markdown, and it'll mostly work pretty well.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h5 id="tables">Tables</h5>
-<p>Colons can be used to align columns.</p>
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th align="center">Are</th>
-<th align="right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td align="center">right-aligned</td>
-<td align="right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td align="center">centered</td>
-<td align="right">$12</td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td align="center">are neat</td>
-<td align="right">$1</td>
-</tr>
-</tbody>
-</table>
-<p>There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the
-raw Markdown line up prettily. You can also use inline Markdown.</p>
-<table>
-<thead>
-<tr>
-<th>Markdown</th>
-<th>Less</th>
-<th>Pretty</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Still</em></td>
-<td><code>renders</code></td>
-<td><strong>nicely</strong></td>
-</tr>
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-</tr>
-</tbody>
-</table>
-<!-- raw HTML omitted -->
-<h5 id="image">Image</h5>
-<p><img src="../../images/post/post-1.jpg" alt="image"></p>
-<!-- raw HTML omitted -->
-<h5 id="youtube-video">Youtube video</h5>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/C0DPdy98e4c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
 
         </div>
 
@@ -334,6 +253,9 @@ raw Markdown line up prettily. You can also use inline Markdown.</p>
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Categories</h6>
         <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/avaya">Avaya</a>
+          </li>
           <li class="mb-3"><a class="text-dark"
               href="/categories/go-language">Go language</a>
           </li>

@@ -6,10 +6,20 @@
     <description>Recent content on らくがき | Personal blog template</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>UTF-8</language>
-    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 09:48:47 +0600</lastBuildDate>
     
 	<atom:link href="https://kosuke-oshinari.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AVAYA 発信の仕組み </title>
+      <link>https://kosuke-oshinari.github.io/blog/post-1/</link>
+      <pubDate>Sat, 08 Feb 2020 09:48:47 +0600</pubDate>
+      
+      <guid>https://kosuke-oshinari.github.io/blog/post-1/</guid>
+      <description>Avayaの発信の仕組みは非常に複雑である。今回は、発信の全体概要を説明し、次回以降で詳細を説明する。
+発信の仕組み　- 概要 - コールセンターから発信する場合、オペレータが電話機又はソフトフォンから架電操作を行うとAvaya Aura Communication Managerにて処理を行い、Media-GatewayからPSTN(公衆交換電話網)を通して、架電先へ着信する。では、この発信操作を行う際に、コールセ ンター内のPBXではどのような処理を行っているのだろうか。</description>
+    </item>
     
     <item>
       <title>About Me</title>
@@ -18,15 +28,6 @@
       
       <guid>https://kosuke-oshinari.github.io/about/about/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
-    </item>
-    
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://kosuke-oshinari.github.io/blog/post-1/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://kosuke-oshinari.github.io/blog/post-1/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
     </item>
     
     <item>
